@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  margin-top: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+
+article {
+  flex: 2;
+  overflow-y: auto;
+  background-color: beige;
+}
+
+aside {
+  flex: 1;
+  overflow-y: auto;
+  background-color: antiquewhite;
+}
+
+footer {
+  background-color: bisque;
+}
+
+footer a {
+  text-decoration: none;
+  font-style: italic;
+}

@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.section-1{
+  background-image: url(images/headphones_hero_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 800px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menu-btn {
+  width: 20px;
+  height: 14px;
+  display: none;
+}
+
+.logo {
+  margin-left: 65px;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav img {
+  height: 32px;
+  width: 161px;
+}
+
+nav li {
+  height: 100px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+nav a:hover {
+  color: #FF6565;
+}
+
+nav ul :first-child{
+  margin-right: auto;
+}
+
+.sidebar{
+  display: none;
+  background-color: #FF6565;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sidebar li{
+  width: 100%;
+}
+
+.sidebar a{
+  width: 100%;
+}
+.menu-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.main-text{
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  align-items: center;
+  text-align: center;
+  padding: 270px 20px 20px 20px;
+}
+
+.main-text h2 {
+  font-size: 32px;
+}
+
+.para{
+  font-weight: 100;
+  width: 680px;
+  font-size: 16px;
+  line-height: 30px;
+
+}
+
+.button {
+  width: 162px;
+  height: 44px;
+  border-radius: 22px;
+  font-size: 14px;
+  border: none;
+  background-color: #FF6565;
+  color: #FFFFFF;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+
+@media  (max-width: 768px) {
+  nav ul {
+    width: 100%;
+  }
+  nav a {
+    height: 100%;
+    padding: 0 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+  }
+
+  .para, .par-1 {
+    width: 80%;
+  }
+
+}
+
+
+
+@media (max-width: 480px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .menu-btn {
+    width: 20px;
+    height: 14px;
+    margin-left: 30px;
+    display: flex;
+  }
+
+  .hideOnMobile {
+    display: none;
+  }
+
+  .para, .par-1 {
+    width: 90%;
+  }
+  
+
+ 
+
+}
