@@ -101,7 +101,7 @@ nav ul :first-child{
   color: #FFFFFF;
   align-items: center;
   text-align: center;
-  padding: 270px 20px 20px 20px;
+  padding: 250px 20px 40px 20px;
 }
 
 .main-text h2 {
@@ -109,11 +109,11 @@ nav ul :first-child{
 }
 
 .para{
+  display: flex;
   font-weight: 100;
   width: 680px;
   font-size: 16px;
   line-height: 30px;
-
 }
 
 .button {
@@ -128,6 +128,49 @@ nav ul :first-child{
   margin-top: 30px;
   margin-bottom: 80px;
 }
+
+.section-2 {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px; 
+}
+
+
+.group p {
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.group div {
+  width: 180px;
+  column-gap: 20px;
+}
+
+.sub-group {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 30px 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 80px;
+  height: 64px;
+}
+
+
 
 
 @media  (max-width: 768px) {
@@ -145,6 +188,11 @@ nav ul :first-child{
 
   .para, .par-1 {
     width: 80%;
+  }
+
+  .group {
+    flex: 1 1 calc(50% - 20px);
+    flex-wrap: wrap;
   }
 
 }
@@ -180,7 +228,8 @@ nav ul :first-child{
     width: 90%;
   }
   
-
- 
+  .group {
+    flex: 1 1 100%;
+  }
 
 }
