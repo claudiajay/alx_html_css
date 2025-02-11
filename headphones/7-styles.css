@@ -1,3 +1,48 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -99,7 +144,7 @@ nav ul :first-child {
   color: #ffffff;
   align-items: center;
   text-align: center;
- 
+  animation: fadeIn 1s ease-in-out;
 }
 
 .main-text h2 {
@@ -130,7 +175,10 @@ nav ul :first-child {
 
 .button:hover {
   opacity: 0.9;
+  transform: scale(1.1);
+
 }
+
 .section-2 {
   display: flex;
   flex-direction: column;
@@ -174,6 +222,7 @@ nav ul :first-child {
 .icon {
   width: 80px;
   height: 64px;
+  animation: bounce 2s infinite;
 }
 
 .section-3 {
@@ -197,6 +246,12 @@ nav ul :first-child {
   justify-content: center;
   padding-top: 15px;
   gap: 30px;
+  animation: slideInFromLeft 1s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pentagon:hover {
+  transform: scale(1.1);
 }
 
 .percentage {
@@ -259,6 +314,7 @@ footer{
   justify-content: center;
   width: 100%;
   padding: 20px;
+  animation: slideInFromRight 1s ease-in-out;
 }
 
 .top {
