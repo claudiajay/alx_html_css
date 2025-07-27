@@ -34,6 +34,9 @@ footer a {
   text-decoration: none;
   font-style: italic;
 }
+footer p {
+  text-align: center;
+}
 
 table {
   width: 100%;
@@ -48,7 +51,7 @@ th, td {
 }
 
 th {
-  background-color: #2980b9;
+  background-color: #b9a629;
   color: white;
 }
 
