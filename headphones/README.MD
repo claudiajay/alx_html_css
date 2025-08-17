@@ -1,4 +1,3 @@
-## Responsive Web Design 
-### Featuring animations
-## ALX HTML CSS
-## Headphones
+# RESPONSIVE HEADPHONE WEBSITE 
+# ALX_HTML_CSS  
+# HEADPHONES
